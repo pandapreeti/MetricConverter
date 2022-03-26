@@ -17,6 +17,7 @@
       android:layout_width="match_parent"
       android:layout_height="?android:attr/actionBarSize"
       android:background="?attr/colorPrimary"
+      android:autofillHints="faherenit"
       app:popupTheme="@style/AppTheme.PopupOverlay" />
   </com.google.android.material.appbar.AppBarLayout>
 
@@ -64,14 +65,16 @@
       tools:visibility="visible">
 
       <TextView
-        android:id="@+id/tvHeader"
+        android:id="@+id/tvTempHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:gravity="left"
         android:text="Conversion Rates"
         android:textAllCaps="true"
-        android:textSize="16sp"
-        android:visibility="invisible" />
+        android:textColor="#CF3131"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
 
       <LinearLayout
         android:layout_width="wrap_content"
@@ -85,17 +88,17 @@
           android:layout_marginTop="5dp"
           android:gravity="center"
           android:textSize="18sp"
-          android:textStyle="bold"
           tools:text="15" />
 
         <TextView
           android:id="@+id/tvC"
-          android:layout_marginStart="15dp"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:layout_marginTop="5dp"
+          android:layout_marginStart="5dp"
           android:gravity="center"
           android:textSize="18sp"
+          android:textStyle="bold"
           tools:text="C" />
       </LinearLayout>
 
@@ -116,12 +119,13 @@
 
         <TextView
           android:id="@+id/tvK"
-          android:layout_marginStart="15dp"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
+          android:layout_marginStart="5dp"
           android:layout_marginTop="5dp"
           android:gravity="center"
           android:textSize="18sp"
+          android:textStyle="bold"
           tools:text="K" />
       </LinearLayout>
 

@@ -68,11 +68,12 @@
         android:id="@+id/tvLengthHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Conversion Rates"
-        android:textAllCaps="true"
-        android:textSize="16sp"
-        android:visibility="invisible" />
+        android:gravity="left"
+        android:textColor="#CF3131"
+        android:text="Length Value"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:visibility="visible" />
 
       <LinearLayout
         android:layout_width="wrap_content"
@@ -86,7 +87,6 @@
           android:layout_marginTop="5dp"
           android:gravity="center"
           android:textSize="18sp"
-          android:textStyle="bold"
           tools:text="15" />
 
         <TextView
@@ -97,6 +97,7 @@
           android:layout_marginTop="5dp"
           android:gravity="center"
           android:textSize="18sp"
+          android:textStyle="bold"
           tools:text="Km" />
       </LinearLayout>
 
@@ -123,6 +124,7 @@
           android:layout_marginTop="5dp"
           android:gravity="center"
           android:textSize="18sp"
+          android:textStyle="bold"
           tools:text="Meters" />
       </LinearLayout>
       <LinearLayout
@@ -147,6 +149,7 @@
           android:gravity="center"
           android:textSize="18sp"
           android:visibility="visible"
+          android:textStyle="bold"
           tools:text="Foot" />
       </LinearLayout>
 
@@ -172,6 +175,7 @@
           android:layout_marginTop="5dp"
           android:gravity="center"
           android:textSize="18sp"
+          android:textStyle="bold"
           tools:text="Inch" />
       </LinearLayout>
 

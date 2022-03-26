@@ -46,7 +46,7 @@ class CurrencyConverter : BaseActivity() {
 
     llDisplayCurrencyResult.visibility = View.VISIBLE
 
-    tvCurrencyHeader.text = ""+ dollar + "US Dollar ="
+    tvCurrencyHeader.text = " "+ dollar + "US Dollar ="
     tvEuroValue.text = euro.toString()
     tvEuro.text = "EUR (Euro)"
     tvIndiaRupee.text = indianRupee.toString()

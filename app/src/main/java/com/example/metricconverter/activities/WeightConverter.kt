@@ -38,6 +38,7 @@ class WeightConverter : BaseActivity(), NavigationView.OnNavigationItemSelectedL
     val ounchVal = 15.999 * poundsValue
 
     llDisplayWeightResult.visibility = View.VISIBLE
+    tvHeader.text = "$poundsValue Pounds ="
     tvKiloGramValue.text = kiloGramVal.toString()
     tvKg.text = "Kg"
     tvGramValue.text = gramVal.toString()
@@ -55,29 +56,6 @@ class WeightConverter : BaseActivity(), NavigationView.OnNavigationItemSelectedL
 
     return isValid
   }
-
-//  override fun onNavigationItemSelected(menuItem: MenuItem): Boolean {
-//    when (menuItem.itemId) {
-//      R.id.nav_home -> {
-//
-////        val radioValue = mSharedPreferences.getString(Constants.RADIO_GROUP_DATA, "")
-////        if(radioValue.isNullOrEmpty()){
-////          startActivity(Intent(this@MainActivity, CurrencyConverter::class.java))
-////        }
-//        //startActivity(Intent(this@MainActivity, MyProfileActivity::class.java))
-//      }
-//
-//      R.id.nav_settings -> {
-//
-//        // Send the user to the settings screen of the application.
-//        val intent = Intent(this, SettingsActivity::class.java)
-//        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
-//        startActivity(intent)
-//      }
-//    }
-//   // weight_drawer_layout.closeDrawer(GravityCompat.START)
-//    return true
-//  }
 
 
 }

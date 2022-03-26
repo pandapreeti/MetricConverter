@@ -33,7 +33,7 @@ class LengthConverter : BaseActivity() {
     val inches = 63359.8425 * lengthValue
 
     llDisplayLengthResult.visibility = View.VISIBLE
-    tvLengthHeader.text = "$lengthValue ="
+    tvLengthHeader.text = "$lengthValue miles ="
     tvKiloMetersValue.text = kilometersVal.toString()
     tvKm.text = "Km"
     tvMeters.text = metersVal.toString()

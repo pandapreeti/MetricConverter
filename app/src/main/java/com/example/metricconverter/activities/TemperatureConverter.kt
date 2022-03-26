@@ -5,7 +5,10 @@ import android.os.Bundle
 import android.view.View
 import com.example.metricconverter.R
 import kotlinx.android.synthetic.main.activity_temperature_converter.*
+import kotlinx.android.synthetic.main.app_bar_length.*
 import kotlinx.android.synthetic.main.app_bar_temperature.*
+import kotlinx.android.synthetic.main.app_bar_temperature.btnCalculateUnits
+import kotlinx.android.synthetic.main.app_bar_temperature.etMetricUnitWeight
 
 class TemperatureConverter : BaseActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,12 +41,14 @@ class TemperatureConverter : BaseActivity() {
   }
 
   private fun displayResult(farehneit: Float) {
+
     val celciusVal =  ((farehneit -32)*5)/9
     val kelvinVal = celciusVal + 273
-
+    etMetricUnitWeight.text = null
     llDisplayTemperatureResult.visibility = View.VISIBLE
+    tvTempHeader.text = "$farehneit Farenheit = "
     tvCeliusValue.text = celciusVal.toString()
-    tvC.text = "C"
+    tvC.text = "\u2103"
     tvKelvin.text = kelvinVal.toString()
     tvK.text = "K"
   }
