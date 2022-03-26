@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white"
+  android:orientation="vertical"
+  tools:context=".activities.CurrencyConverter">
+
+  <com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay">
+    <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar_currency_activity"
+      android:layout_width="match_parent"
+      android:layout_height="?android:attr/actionBarSize"
+      android:background="?attr/colorPrimary"
+      app:popupTheme="@style/AppTheme.PopupOverlay" />
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/rgUnits"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/tilMetricUnitWeight"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:padding="10dp"
+      android:layout_height="wrap_content">
+
+      <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etMetricUnitWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Currency to convert"
+        android:inputType="numberDecimal"
+        android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+      android:id="@+id/btnCalculateUnits"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom"
+      android:layout_marginTop="20dp"
+      android:backgroundTint="@color/colorAccent"
+      android:text="Convert"
+      android:textColor="#FFFFFF"
+      android:textSize="18sp" />
+
+    <LinearLayout
+      android:id="@+id/llDisplayCurrencyResult"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="25dp"
+      android:orientation="vertical"
+      android:visibility="invisible"
+      tools:visibility="visible">
+
+      <TextView
+        android:id="@+id/tvCurrencyHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Conversion Rates"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+          android:id="@+id/tvEuroValue"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:gravity="center"
+          android:textSize="18sp"
+          android:textStyle="bold"
+          tools:text="15" />
+        <ImageView
+          android:id="@+id/imgEuroValue"
+          android:layout_width="match_parent"
+          android:layout_height="20dp"
+          android:layout_marginStart="15dp"
+          android:layout_marginTop="5dp"
+          android:gravity="center"
+          android:textSize="18sp"
+          android:scaleType="fitXY"
+          android:adjustViewBounds="true"
+          android:textStyle="bold"
+          android:src="@drawable/europeflag"
+          />
+        <TextView
+          android:id="@+id/tvEuro"
+          android:layout_marginStart="15dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:gravity="center"
+          android:textSize="18sp"
+          tools:text="EUR (Euro)" />
+      </LinearLayout>
+
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+          android:id="@+id/tvIndiaRupee"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:gravity="center"
+          android:textSize="18sp"
+          tools:text="15" />
+        <ImageView
+          android:id="@+id/imgRupeeValue"
+          android:layout_width="match_parent"
+          android:layout_height="20dp"
+          android:layout_marginStart="15dp"
+          android:layout_marginTop="5dp"
+          android:gravity="center"
+          android:textSize="18sp"
+          android:scaleType="fitXY"
+          android:adjustViewBounds="true"
+          android:textStyle="bold"
+          android:src="@drawable/indiaflag"
+          tools:text="15 Euro" />
+        <TextView
+          android:id="@+id/tvRupee"
+          android:layout_marginStart="15dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:gravity="center"
+          android:textSize="18sp"
+          tools:text="IND (Rupee)" />
+      </LinearLayout>
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+          android:id="@+id/tvAustralianDollar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:gravity="center"
+          android:textSize="18sp"
+          tools:text="12 " />
+        <ImageView
+          android:id="@+id/imgAustraliaValue"
+          android:layout_width="match_parent"
+          android:layout_height="20dp"
+          android:layout_marginStart="15dp"
+          android:layout_marginTop="5dp"
+          android:gravity="center"
+          android:textSize="18sp"
+          android:scaleType="fitXY"
+          android:adjustViewBounds="true"
+          android:textStyle="bold"
+          android:src="@drawable/australiaflag"
+          />
+        <TextView
+          android:id="@+id/tvAustralia"
+          android:layout_marginStart="15dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:gravity="center"
+          android:textSize="18sp"
+          android:visibility="visible"
+          tools:text="AUS (Dollar)" />
+      </LinearLayout>
+
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+          android:id="@+id/tvCanadianDollar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:gravity="center"
+          android:textSize="18sp"
+          tools:text="12" />
+        <ImageView
+          android:id="@+id/imgCanadaValue"
+          android:layout_width="match_parent"
+          android:layout_height="20dp"
+          android:layout_marginStart="15dp"
+          android:layout_marginTop="5dp"
+          android:gravity="center"
+          android:textSize="18sp"
+          android:scaleType="fitXY"
+          android:adjustViewBounds="true"
+          android:textStyle="bold"
+          android:src="@drawable/canadaflag"
+          tools:text="15 Euro" />
+        <TextView
+          android:id="@+id/tvCanada"
+          android:layout_marginStart="15dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:gravity="center"
+          android:textSize="18sp"
+          tools:text="CAD (Canadian Dollar)" />
+      </LinearLayout>
+
+    </LinearLayout>
+  </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

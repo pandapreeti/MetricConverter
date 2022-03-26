@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+  android:layout_height="match_parent">
+
+  <com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar_settings_activity"
+      android:layout_width="match_parent"
+      android:layout_height="?android:attr/actionBarSize"
+      android:background="?attr/colorPrimary"
+      app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+  </com.google.android.material.appbar.AppBarLayout>
+
+
+  <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radioGrpId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp"
+
+    android:orientation="vertical">
+    <RadioButton android:id="@+id/len"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Length Converter"
+      />
+    <RadioButton android:id="@+id/temp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Temperature Converter"
+      />
+
+    <RadioButton android:id="@+id/wt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Weight Converter"
+      />
+    <RadioButton android:id="@+id/cur"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Currency Converter"
+      />
+
+  </RadioGroup>
+
+</LinearLayout>

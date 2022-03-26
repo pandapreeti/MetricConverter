@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">MetricConverter</string>
+  <string name="nav_profile_name">Metric Converter</string>
+  <string name="nav_sign_out">Sign Out</string>
+  <string name="please_click_back_again_to_exit">Please click back again</string>
+  <string name="image_contentDescription">image</string>
+  <string name="nav_setting_name">Settings</string>
+  <string name="nav_home">Home</string>
+</resources>
