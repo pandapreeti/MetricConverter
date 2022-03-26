@@ -39,10 +39,10 @@ class CurrencyConverter : BaseActivity() {
   }
 
   private fun displayResult(dollar: Float) {
-    val euro = 0.85 * dollar
-    val indianRupee= 74 * dollar
-    val australianDolar = 1.42 * dollar
-    val canadianDollar = 1.33 * dollar
+    val euro = 0.91 * dollar
+    val indianRupee= 76.28 * dollar
+    val australianDollar = 1.35 * dollar
+    val canadianDollar = 1.25 * dollar
 
     llDisplayCurrencyResult.visibility = View.VISIBLE
 
@@ -51,7 +51,7 @@ class CurrencyConverter : BaseActivity() {
     tvEuro.text = "EUR (Euro)"
     tvIndiaRupee.text = indianRupee.toString()
     tvRupee.text = "IND (Indian Rupee)"
-    tvAustralianDollar.text = australianDolar.toString()
+    tvAustralianDollar.text = australianDollar.toString()
     tvAustralia.text = "AUS (Dollar)"
     tvCanadianDollar.text = canadianDollar.toString()
     tvCanada.text = "CAD (Canadian Dollar)"

@@ -21,7 +21,6 @@ class WeightConverter : BaseActivity(), NavigationView.OnNavigationItemSelectedL
     toolbar_weight_activity.title = "Weight Converter"
     val actionbar = supportActionBar
     if(actionbar!=null) {
-      //actionbar.setDisplayHomeAsUpEnabled(true)
       actionbar.title = "Weight Converter"
     }
     weight_drawer_layout.closeDrawer(GravityCompat.START)
@@ -35,7 +34,7 @@ class WeightConverter : BaseActivity(), NavigationView.OnNavigationItemSelectedL
 
   private fun displayResult(poundsValue: Float) {
     val kiloGramVal = 0.453592 * poundsValue
-    val gramVal = 453.592 *poundsValue
+    val gramVal = 453.592 * poundsValue
     val ounchVal = 15.999 * poundsValue
 
     llDisplayWeightResult.visibility = View.VISIBLE

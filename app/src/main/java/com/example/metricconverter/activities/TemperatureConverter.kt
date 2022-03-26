@@ -38,8 +38,8 @@ class TemperatureConverter : BaseActivity() {
   }
 
   private fun displayResult(farehneit: Float) {
-    val celciusVal = -17.2222 * farehneit
-    val kelvinVal = 55.9278 *farehneit
+    val celciusVal =  ((farehneit -32)*5)/9
+    val kelvinVal = celciusVal + 273
 
     llDisplayTemperatureResult.visibility = View.VISIBLE
     tvCeliusValue.text = celciusVal.toString()
